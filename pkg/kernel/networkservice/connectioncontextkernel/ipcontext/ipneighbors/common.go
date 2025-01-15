@@ -36,10 +36,10 @@ import (
 	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
 	"github.com/networkservicemesh/api/pkg/api/networkservice/payload"
 
-	link "github.com/networkservicemesh/sdk-kernel/pkg/kernel"
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/tools/peer"
+	link "github.com/ljkiraly/sdk-kernel/pkg/kernel"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/tools/peer"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/ljkiraly/sdk/pkg/tools/log"
 )
 
 func create(ctx context.Context, conn *networkservice.Connection, isClient bool) error {

@@ -24,16 +24,16 @@ package connectioncontextkernel
 import (
 	"github.com/networkservicemesh/api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/iptables4nattemplate"
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/mtu"
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/routelocalnet"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/iptables4nattemplate"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/mtu"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/routelocalnet"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
+	"github.com/ljkiraly/sdk/pkg/networkservice/core/chain"
 
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/ipcontext/ipaddress"
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/ipcontext/ipneighbors"
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/ipcontext/routes"
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/pinggrouprange"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/ipcontext/ipaddress"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/ipcontext/ipneighbors"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/ipcontext/routes"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/connectioncontextkernel/pinggrouprange"
 )
 
 // NewClient provides a NetworkServiceClient that applies the connectioncontext to a kernel interface

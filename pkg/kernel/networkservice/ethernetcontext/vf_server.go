@@ -31,11 +31,11 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
-	"github.com/networkservicemesh/sdk/pkg/tools/postpone"
+	"github.com/ljkiraly/sdk/pkg/networkservice/core/next"
+	"github.com/ljkiraly/sdk/pkg/tools/log"
+	"github.com/ljkiraly/sdk/pkg/tools/postpone"
 
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/vfconfig"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/vfconfig"
 )
 
 type vfEthernetContextServer struct{}

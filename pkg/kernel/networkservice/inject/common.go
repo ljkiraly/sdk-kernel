@@ -29,15 +29,15 @@ import (
 
 	"github.com/networkservicemesh/api/pkg/api/networkservice"
 	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/ljkiraly/sdk/pkg/tools/log"
 	"github.com/pkg/errors"
 	"github.com/vishvananda/netlink"
 	"github.com/vishvananda/netns"
 	"golang.org/x/sys/unix"
 
-	kernellink "github.com/networkservicemesh/sdk-kernel/pkg/kernel"
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/vfconfig"
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/tools/nshandle"
+	kernellink "github.com/ljkiraly/sdk-kernel/pkg/kernel"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/vfconfig"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/tools/nshandle"
 )
 
 func moveInterfaceToAnotherNamespace(ifName string, fromNetNS, toNetNS netns.NsHandle, logger log.Logger) error {

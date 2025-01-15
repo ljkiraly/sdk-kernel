@@ -28,7 +28,7 @@ import (
 	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/tools/heal"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/tools/heal"
 )
 
 const unPingableIPv4 = "172.168.1.1"

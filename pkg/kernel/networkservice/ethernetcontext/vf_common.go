@@ -29,12 +29,12 @@ import (
 
 	"github.com/networkservicemesh/api/pkg/api/networkservice"
 	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/ljkiraly/sdk/pkg/tools/log"
 	"github.com/pkg/errors"
 	"github.com/vishvananda/netlink"
 
-	link "github.com/networkservicemesh/sdk-kernel/pkg/kernel"
-	"github.com/networkservicemesh/sdk-kernel/pkg/kernel/networkservice/vfconfig"
+	link "github.com/ljkiraly/sdk-kernel/pkg/kernel"
+	"github.com/ljkiraly/sdk-kernel/pkg/kernel/networkservice/vfconfig"
 )
 
 func setKernelHwAddress(ctx context.Context, conn *networkservice.Connection, isClient bool) error {
