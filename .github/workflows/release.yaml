@@ -33,7 +33,7 @@ jobs:
     needs: get-tag
     uses: networkservicemesh/.github/.github/workflows/release.yaml@main
     secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+      token: ${{ secrets.BOT_TOKEN }}
 
   release-dependent-repositories:
     name: Release dependent repositories
@@ -43,4 +43,4 @@ jobs:
       tag: ${{ needs.get-tag.outputs.tag }}
       dependent_repositories: '["sdk-vpp", "sdk-sriov"]'
     secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+      token: ${{ secrets.BOT_TOKEN }}
